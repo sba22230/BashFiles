@@ -3,6 +3,7 @@
 For when you need to wipe your linux VM and start again. 
 
 A couple of things to note, none of the bash scripts test for previous existance of files or lines, they are designed to run one after the other once. 
+The hbase install does not work completely, not sure why and not sure if I will fix it. 
 
 Run the files in this order 
 *  1: hadoop_Install.sh
