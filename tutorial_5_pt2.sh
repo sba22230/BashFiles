@@ -17,6 +17,7 @@ read -p "Exit the pyspark session" </dev/tty
 
 sudo wget https://repo.anaconda.com/archive/Anaconda3-2022.10-Linux-x86_64.sh
 
+read -p "Note change the default path to /usr/local/anaconda3" </dev/tty
 sudo bash Anaconda3-2022.10-Linux-x86_64.sh
 
 cd /home/sba22230
@@ -32,7 +33,6 @@ source ./.bashrc
 pyspark
 
 sudo apt install jupyter
-
 pyspark
 
 read -p "Exit the pyspark session" </dev/tty
