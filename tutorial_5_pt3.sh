@@ -1,5 +1,5 @@
 cd ~
-cd /Desktop
+cd Desktop
 mkdir Lab05
 cd Lab05
 
@@ -14,10 +14,17 @@ unzip Tutorial_5_Spark_Word_Count_Example.zip
 cd Tutorial_5_Spark_Word_Count_Example
 cp ./*.* ../../Desktop/Lab05/
 cd ~
-cd /Desktop/Lab05/
+cd Desktop/Lab05/
 hadoop fs -put ./pg30123.txt /user1
 hadoop fs -ls /user1
 pyspark 
 
 # in the jupyter notebook follow the steps in the tutorial
+read -p "launch the tutorial 5 notebook" </dev/tty #
+
+stop()
+{
+    stop-dfs.sh
+    stop-yarn.sh
+}
 
