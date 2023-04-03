@@ -10,7 +10,9 @@ read -p "Check that Hadoop has started" </dev/tty
 # Go to the downloads folder
 cd ~
 cd Downloads
-unzip Tutorial_5_Spark_Word_Count_Example.zip
+unzip Tutorial_5_Spark_Word_Count_Example.zip -d ~/Home/Lab05/
+unzip Tutorial_5_DL -d ~/Home/Lab05/
+unzip Tutorial_5_NN -d ~/Home/Lab05/
 cd Tutorial_5_Spark_Word_Count_Example
 cp ./*.* ../../Desktop/Lab05/
 cd ~
@@ -20,7 +22,7 @@ hadoop fs -ls /user1
 pyspark 
 
 # in the jupyter notebook follow the steps in the tutorial
-read -p "launch the tutorial 5 notebook" </dev/tty #
+read -p "launch the tutorial 5 notebooks" </dev/tty #
 
 stop()
 {
