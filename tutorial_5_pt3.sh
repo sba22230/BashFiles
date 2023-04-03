@@ -13,10 +13,10 @@ cd Downloads
 unzip Tutorial_5_Spark_Word_Count_Example.zip -d ~/Home/Lab05/
 unzip Tutorial_5_DL -d ~/Home/Lab05/
 unzip Tutorial_5_NN -d ~/Home/Lab05/
-cd Tutorial_5_Spark_Word_Count_Example
-cp ./*.* ../../Desktop/Lab05/
+
 cd ~
-cd Desktop/Lab05/
+cd Lab05/
+
 hadoop fs -put ./pg30123.txt /user1
 hadoop fs -ls /user1
 pyspark 
