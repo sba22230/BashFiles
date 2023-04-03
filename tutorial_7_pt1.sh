@@ -1,6 +1,6 @@
 cd 
 cd Downloads
-wget https://www.apache.org/dyn/closer.lua/cassandra/3.11.14/apache-cassandra-3.11.14-bin.tar.gz
+#wget https://dlcdn.apache.org/cassandra/3.11.14/apache-cassandra-3.11.14-bin.tar.gz
 tar -zxvf ./apache-cassandra-3.11.14-bin.tar.gz
 sudo mv ./apache-cassandra-3.11.14 /usr/local
 cd /usr/local
@@ -11,8 +11,8 @@ ls
 cd cassandra
 cd conf
 
-echo 'export cluster_name: 'BDSP Cluster'' >> ./cassandra.yaml
-echo 'export num_tokens: 24' >> ./cassandra.yaml
+echo 'cluster_name: 'BDSP Cluster'' >> ./cassandra.yaml
+echo 'num_tokens: 24' >> ./cassandra.yaml
 
 echo 'dc=ClockworkAngels' >> ./cassandra-rackdc.properties
 echo 'rack=R40' >> ./cassandra-rackdc.properties
