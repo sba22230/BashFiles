@@ -4,7 +4,7 @@ ncat -l -p 7777
 cd ~
 mkdir Lab06
 cd Downloads
-unzip Tutorial_6_Spark_SQL.zip -d ~/Lab06/
+unzip 'Tutorial 6 SparkSQL.zip' -d ~/Lab06/
 unzip snscrapper-Ubuntu.zip -d ~/Lab06/
 unzip 'Tutorial 6 - Spark live Streaming.zip' -d ~/Lab06/
 
