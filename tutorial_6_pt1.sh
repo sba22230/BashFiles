@@ -13,6 +13,7 @@ start-dfs.sh
 start-yarn.sh
 # Buried in the Spark SQl note book is instruction to move a file to hadoop
 cd ~/Lab06/
+cd 'Tutorial 6 SparkSQL'
 hadoop fs -put people.json /user1
 pyspark
 
