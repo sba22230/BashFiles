@@ -15,6 +15,10 @@ start-yarn.sh
 cd ~/Lab06/
 cd 'Tutorial 6 SparkSQL'
 hadoop fs -put people.json /user1
+
+hadoop fs -put ./airport-codes-na.txt /user1
+hadoop fs -put ./departuredelays.csv /user1
+hadoop fs -put ./ccFraud.csv.gz /user1
 pyspark
 
 read -p "launch the tutorial 6 notebooks" </dev/tty #
