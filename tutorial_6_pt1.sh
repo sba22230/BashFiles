@@ -11,6 +11,9 @@ unzip 'Tutorial 6 - Spark live Streaming.zip' -d ~/Lab06/
 
 start-dfs.sh
 start-yarn.sh
+# Buried in the Spark SQl note book is instruction to move a file to hadoop
+cd ~/Lab06/
+hadoop fs -put people.json /user1
 pyspark
 
 read -p "launch the tutorial 6 notebooks" </dev/tty #
