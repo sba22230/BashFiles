@@ -18,3 +18,5 @@ Run the files in this order
 *  10: tutorial_5_pt1.sh
 *  11: tutorial_5_pt2.sh
 *  12: tutorial_5_pt3.sh
+
+Files from tutorial_6_pt1.sh are not runable as there are more than shell commands in the files. You need to pull them on to the linux vm and from there open the file run the commands sequentially. 
