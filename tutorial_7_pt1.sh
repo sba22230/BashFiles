@@ -11,11 +11,11 @@ ls
 cd cassandra
 cd conf
 
-echo 'cluster_name: 'BDSP Cluster'' >> ./cassandra.yaml
-echo 'num_tokens: 24' >> ./cassandra.yaml
+sed -i "s/cluster_name:/cluster_name:BDSP Cluster/g" cassandra.yaml
+sed -i "s/num_tokens:/num_tokens: 24/g" cassandra.yaml
 
-echo 'dc=ClockworkAngels' >> ./cassandra-rackdc.properties
-echo 'rack=R40' >> ./cassandra-rackdc.properties
+sed -i "s/dc=/dc=ClockworkAngels/g" cassandra-rackdc.properties
+sed -i "s/rack=/rack=R40/g" cassandra-rackdc.properties
 
 cd ..
 bin/cassandra -p cassandra.pid
