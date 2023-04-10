@@ -1,5 +1,5 @@
 cd ~
-cd Desktop
+
 mkdir Lab05
 cd Lab05
 
@@ -10,9 +10,9 @@ read -p "Check that Hadoop has started" </dev/tty
 # Go to the downloads folder
 cd ~
 cd Downloads
-unzip Tutorial_5_Spark_Word_Count_Example.zip -d ~/Home/Lab05/
-unzip Tutorial_5_DL -d ~/Home/Lab05/
-unzip Tutorial_5_NN -d ~/Home/Lab05/
+unzip Tutorial_5_Spark_Word_Count_Example.zip -d ~/Lab05/
+unzip Tutorial_5_DL -d ~/Lab05/
+unzip Tutorial_5_NN -d ~/Lab05/
 
 cd ~
 cd Lab05/
