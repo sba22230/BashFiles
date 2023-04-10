@@ -11,8 +11,8 @@ ls
 cd cassandra
 cd conf
 
-echo 'export cluster_name: 'BDSP Cluster'' >> ./cassandra.yaml
-echo 'export num_tokens: 24' >> ./cassandra.yaml
+sed -i "s/cluster_name:/cluster_name:BDSP Cluster/g" cassandra.yaml
+sed -i "s/num_tokens:/num_tokens: 24/g" cassandra.yaml
 
 sed -i "s/dc=/dc=ClockworkAngels/g" cassandra-rackdc.properties
 sed -i "s/rack=/rack=R40/g" cassandra-rackdc.properties
